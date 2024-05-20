@@ -63,7 +63,8 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    background-color: white;
+    /* background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); */
 }
 
 .main-button:hover {
