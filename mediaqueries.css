@@ -24,12 +24,15 @@
     font-size: 3rem;
     font-weight: bold;
     transition:  300ms ease;
-}
-
-.hello-container h2 {
-    color: white;
-    font-size: 3rem;
-    font-weight: bold;
-    transition:  300ms ease;
+  }
+  .hello-container h2 {
+      color: white;
+      font-size: 3rem;
+      font-weight: bold;
+      transition:  300ms ease;
+  }
+  .experience__details {
+    margin-top: 5%;
+    margin-bottom: 1%;
 }
 }
