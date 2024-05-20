@@ -59,7 +59,7 @@ nav, .nav-links {
 nav {
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    height: 10%;
     position: fixed;
     top: 0;
     width: 100%;
@@ -224,7 +224,7 @@ list-style: none;
     flex-flow: row wrap;
     font-size: 1.5rem;
     font-weight: bold;
-    margin: 15px 0px;
+    margin: 10px 0px;
 }
 
 /* ICONS */
