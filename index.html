@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Joseph Lee</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <nav id="desktop-nav">
+        <div class="logo"><a href="">Joseph Lee</a></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="assets/josephlee_resume.pdf">Resume</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- HAMBURGER LOGO -->
+    <nav id="hamburger-nav">
+        <div class="logo">Joseph Lee</div>
+        <div class="hamburger-menu">
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="top line"></div>
+                <div class="middle line"></div>
+                <div class="bottom line"></div>
+            </div>
+            <div class="menu-links" id="menu">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="assets/josephlee_resume.pdf" onclick="toggleMenu()">Resume</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HELLO ANIMATION -->
+    <div class="hello-container">
+        <h1 class="header-sub-title" id="word"></h1><h2 class="header-sub-title blink">|</h2>
+    </div>
+
+    <!-- DESCRIPTION -->
+    <div class="description">
+        <h1>I'm an engineer and developer based in Toronto.</h1>
+        <p>I'm a final-year <strong>Biomedical Engineering</strong> student currently wrapping up his studies
+            at Toronto Metropolitan University. Previously, I've worked on the world's first ML/DL-based 
+            liver screening software at <strong>Oncoustics.</strong>
+        </p>
+        <p><br>I am currently open to new grad or full time work opportunities starting summer 2024. If any of my experiences or projects interest you,
+        please feel free to reach out!</p>
+    </div>
+
+    <!-- SOCIALS -->
+    <div id="socials-container">
+        <img src="assets/email.png" alt="My Email"
+        class="icon" onclick="window.open('mailto:josephslee31@gmail.com', '_blank')">
+        <img src="assets/linkedin.png" alt="My LinkedIn Profile"
+        class="icon" onclick="window.open('https://www.linkedin.com/in/leejjoseph/','_blank')">
+        <img src="assets/github.png" alt="My GitHub Profile"
+        class="icon" onclick="window.open('https://github.com/josephlee31/', '_blank')">
+    </div>
+
+    <!-- EXPERIENCES -->
+    <section class="experience">
+        <div class="experience__heading">
+            <h1>EXPERIENCE</h1>
+            <div class="experience__details">
+                <a><strong>Oncoustics – </strong>Clinical Data & Operations Intern</a>
+                <p>• Supported the implementation of data infrastructure using <strong>Python</strong> and <strong>GCP</strong> 
+                    to automate/simplify data querying, storage, and analysis.</p>
+                <p>• Accelerated digital signal processing (DSP) runtime by <strong>45%</strong> through the optimization of
+                    API calls and parallel processing with Python’s <strong>Google Cloud API</strong> and <strong>multiprocessing</strong> library.</p>
+                <p>• Eased clinical/regulatory operations by <strong>85%</strong> by designing a <strong>document control system</strong> for the company’s QMS,
+                    consisting of data quality manuals, FDA 510(k) Pre-market Notification documents, and IRB contracts. </p>
+
+                <button class="button-30" role="button">Software Development (Python, GCP)</button>
+                <button class="button-30" role="button">Regulatory Affairs (FDA, ISO 13485)</button>
+                <button class="button-30" role="button">Data Analysis (SQL, Looker)</button>
+            </div>
+            <div class="experience__details">
+                <a><strong>St. Michael's Hospital (iBEST) – </strong>Research Assistant</a>
+                <p>• Led a collaborative project with iBEST, St. Michael's Hospital, and The Hospital for Sick Children to investigate the role of 
+                    <strong>extracellular vesciles</strong> on cost-effective approaches towards <strong>lung disease detection.</strong></p>
+                <p>• Identified 3+ biphasic solutions for biomarker partitioning from blood samples, leading to more cost-effective and
+                    in-vitro approaches to detecting early-stage lung disease.</p>
+                <p>• Ensured laboratory safety by implementing continuous improvements in 3+ SOPs related to lab instrument operation,
+                    bacterial sample transportation, and decontamination procedures.                     </p>
+                
+                    <button class="button-30" role="button">R&D</button>
+                <button class="button-30" role="button">Wet/Dry Lab Research</button>
+                <button class="button-30" role="button">Standard Operating Procedures (SOPs)</button>
+                <button class="button-30" role="button">Microfluidics</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="experience">
+        <div id="projects" class="experience__heading">
+            <h1>PROJECTS</h1>
+            <div class="experience__details">
+                <a><strong>CaliBrace: Virtual Tailor (Capstone Project) – </strong>Backend Developer & Image Processing Lead</a>
+                <p>An image-guided software algorithm that converts photos of a user's hand into a <strong>3D-printable, custom wrist brace.</strong> Check it out here.</p>
+                
+                <button class="button-30" role="button">Backend Development</button>
+                <button class="button-30" role="button">Computer Vision (OpenCV)</button>
+                <button class="button-30" role="button">Machine Learning (Mediapipe)</button>
+                <button class="button-30" role="button">Google Cloud Platform (GCP)</button>
+                <button class="button-30" role="button">Flask</button>
+                <button class="button-30" role="button">Docker</button>
+            </div>
+
+            <div class="experience__details">
+                <a><strong>Virtual Football Bot </strong></a>
+                <p>A Discord bot which scrapes info from transfermarkt.us and displays statistical insights of 20,000+ football players/teams using BeautifulSoup and Discord.py. Check it out
+                    <a href="https://github.com/josephlee31/Sonny-Bot" style="color: blue;">here</a>. </p>
+
+                <button class="button-30" role="button">Python</button>
+                <button class="button-30" role="button">BeautifulSoup</button>
+                <button class="button-30" role="button">Discord.py</button>
+            </div>
+
+            <div class="experience__details">
+                <a><strong>Personal Website </strong></a>
+                <p>The personal website you see here was built using CSS, JavaScript, and HTML! I'm planning to expand this website further using React. Feel free to refer to the GitHub page
+                    <a href="https://github.com/josephlee31/Sonny-Bot" style="color: blue;">here</a>. </p>
+
+                <button class="button-30" role="button">Frontend Development</button>
+                <button class="button-30" role="button">CSS</button>
+                <button class="button-30" role="button">JavaScript</button>
+                <button class="button-30" role="button">HTML</button>
+            </div>
+
+            <div class="experience__details">
+                <a><strong>OMSAS GPA Calculator </strong></a>
+                <p>A fully functional GPA calculator GUI for aspiring medical students in Ontario, built using CustomTkinter. Check it out
+                    <a href="https://github.com/josephlee31/Sonny-Bot" style="color: blue;">here</a>. </p>
+
+                <button class="button-30" role="button">Python</button>
+                <button class="button-30" role="button">CustomTkinter</button>
+                <button class="button-30" role="button">Data Structures</button>
+            </div>
+
+            <div class="experience__details">
+                <a><strong>EEG Sleep Classification Model</strong></a>
+                <p>A supervised ML model capable of classifying 3 distinct sleep stages with ~85% accuracy, using MATLAB's Classification Learner. Check it out 
+                    <a href="https://drive.google.com/file/d/1G1FiasXu0BOn7781RCP1wpNAr3CgbzQb/view?usp=sharing" style="color: blue;">here</a>. </p>
+
+                <button class="button-30" role="button">Supervised Machine Learning (ML)</button>
+                <button class="button-30" role="button">MATLAB</button>
+                <button class="button-30" role="button">Feature Analysis</button>
+            </div>
+
+            <div class="experience__details">
+                <a><strong>Piezoelectric EMG Sensor Simulator</strong></a>
+                <p>A working simulation model of a piezoelectric electromyogram sensor, programmed using MATLAB and C. Check it out 
+                    <a href="https://drive.google.com/file/d/1ci6bkMyMRgHXBqSgeHR2isNuLWaAY_vs/view?usp=drive_link" style="color: blue;">here</a>. </p>
+                <button class="button-30" role="button">Microprocessor Design (LabVIEW, Proteus)</button>
+                <button class="button-30" role="button">C/C++</button>
+                <button class="button-30" role="button">MATLAB</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ABOUT -->
+    <section class="experience">
+        <div id="about" class="experience__heading">
+            <h1>ABOUT ME</h1>
+            <div class="aboutme__details">
+                <p>I'm Joseph, a final-year Biomedical Engineering student at Toronto Metropolitan University (formerly Ryerson). I love learning new technologies
+                    and tools to create cool things that solve real-world problems and empower others' lives.
+
+                    <br><br>When I'm not studying for school or coding, you'll most likely find me drawing, playing soccer/basketball, or playing Valorant with friends
+                    (Recently hit Gold 2 🪙).
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="text.js"></script>
+</body>
+</html>

@@ -1,0 +1,320 @@
+/* GENERAL */
+/* Target the hole page using "*" */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Target the entire code inside <body> */
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Scroll down in a smooth manner when navigating pages */
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: #000;
+}
+
+/* TRANSITION */
+a, .btn {
+    transition:  300ms ease;
+}
+
+/* DESKTOP NAV */
+nav, .nav-links {
+    display: flex;
+}
+
+/* CHANGE LOGO FONT */
+.logo {
+    font-size: 1.2rem;
+}
+
+.logo a:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+.main-button:hover {
+    color:gray;
+    text-decoration: none;
+}
+
+.nav-links { 
+    gap: 2rem;
+    list-style: none;
+    font-size: 1rem;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+.nav-links a:hover {
+    color: blue;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: gray;
+}
+
+/* HAMBURGER MENU */
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger {
+	margin: 0px;
+	height: 51px;
+	width: 51px;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+.line {
+	height: 3px;
+	width: 22px;
+	background-color: black;
+	position: relative;
+	top: 10px;
+	margin: 5px auto 0 auto;
+}
+
+.bottom {
+	transform: rotate(0deg) translateY(0px);
+	transition: 0.5s;
+}
+
+.hamburger.open .bottom {
+	transform: translateY(-8px) rotate(-45deg);
+	transition: 0.5s;
+}
+
+.top {
+	transform: rotate(0deg) translateY(0px);
+	transition: 0.5s;
+}
+
+.hamburger.open .top {
+	transform: translateY(8px) rotate(45deg);
+	transition: 0.5s;
+}
+
+.middle {
+	opacity: 1;
+	transition: 0.6s;
+}
+
+.hamburger.open .middle {
+	opacity: 0;
+	transition: 0.6s;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+    opacity: 1;
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+  }
+
+.menu-links.open {
+    max-height: 300px;
+    animation: fade 2s linear;
+}
+
+.menu-links li {
+list-style: none;
+}
+
+@keyframes fade {
+    0% { opacity: 0 }
+    50% { opacity: 1 }
+}
+
+/* PROFILE SECTION */
+.hello-container {
+    margin-top: 10%;
+    display: flex;
+    height: 100px;
+    margin-left: 12%;
+}
+
+.hello-container h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    transition:  300ms ease;
+}
+
+.hello-container h2 {
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    transition:  300ms ease;
+}
+
+.description {
+    flex-flow: row wrap;
+    max-width: 60%;
+    margin-left: 12%;
+}
+
+.description h1 {
+    flex-flow: row wrap;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 15px 0px;
+}
+
+/* ICONS */
+
+#socials-container {
+    margin-left: 12%;
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* EXPERIENCES */
+.experience__heading {
+    margin-left: 12%;
+    margin-top: 3%;
+    color: darkslateblue;
+    font-size: large;
+}
+
+.experience__heading h1 {
+    margin-bottom: 1%;
+}
+
+.experience__heading p {
+    margin-top: 1%;
+    font-size: 15px;
+    max-width: 75%;
+}
+
+.button-30 {
+    margin-top: 2%;
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 30px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 14px;
+    margin-bottom: 3%;
+  }
+  
+  .button-30:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  }
+  
+  .button-30:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .button-30:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+
+.experience {
+    margin-bottom: 2%;
+}
+
+.aboutme__details {
+    margin-bottom: 20%;
+    display: flex;
+    max-width: 68%;
+}
+
+.img-ny {
+    margin-left: 1%;
+    width: 20%;
+}
