@@ -1,2 +1,2 @@
 ## Personal Website 
-This is my personal website, developed using CSS, HTML, and JavaScript.
+My personal website, implemented using CSS, HTML, and JavaScript.
